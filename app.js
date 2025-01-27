@@ -62,36 +62,9 @@ function sortearAmigo(){
     const amigoSorteado = amigos[aleatorio]; 
     
 // Mostrar el amigo sorteado en el DOM
-   resultado.textContent = `El amigo sorteao es: ${amigoSorteado}`
-    }else {        
+   resultado.textContent = `El amigo sorteao es: ${amigoSorteado}`;
+    }else {         
     resultado.textContent = `Por favor, ingrese nombres de amigo suyos.`;
     }
 }
 document.getElementById('button-draw').addEventListener('click', sortearAmigo);
-
-
-
-
-
-
-
-// validar que el campo no este vacio
-// function validarCampo(){
-//     let campo = document.querySelector('#amigo').value;
-//     if (campo === "");
-//     {
-//     }
-// }
-
-function Saludo(){
-    // Establecer las condiciones para "día", "tarde" y "noche"
-    if (hora >= 6 && hora < 12) {
-        parteDelDia = "Buenos días";
-    } else if (hora >= 12 && hora < 18) {
-        parteDelDia = "Buenas tardes";
-    } else {
-        parteDelDia = "Buenas noches";
-    }
-    // Imprimir el resultado
-    console.log(parteDelDia);
-}
